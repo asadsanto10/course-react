@@ -1,9 +1,9 @@
 import React from 'react';
 import {Col, Row } from 'react-bootstrap';
-import course from '../CourseData';
+import course from '../../CourseData';
 import { useState } from 'react';
-import Course from './Course';
-import Cart from './Cart';
+import Course from '../Course/Course';
+import Cart from '../Cart/Cart';
 
 const Purcehes = () => {
     // course data show

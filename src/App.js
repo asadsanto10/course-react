@@ -1,7 +1,7 @@
 import React from 'react';
 import './Asset/Bootstarp.css';
 import './Style.scss';
-import Purcehes from './Components/Purcehes';
+import Purcehes from './Components/Purcehes/Purcehes';
 
 function App() {
   return (
