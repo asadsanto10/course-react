@@ -1,12 +1,149 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8d94a7;
+    outline: 1px solid #8d94a7;
+}
+
 .App {
+    .main_conatiner{
+        width: 90%;
+        margin: 0 auto;
+    }
     background-color: #282c34;
     justify-content: center;
     color: white;
-    height: 100vh;
+    height: auto;
+    .image{
+        img{
+            border-radius: 8px;
+            height: 100%;
+            width: 250px;
+        }
+    }
+    .course-deatils {
+        padding: 0 35px;
+        width: 100%;
+        h2{
+            font-size:15px;
+        }
+        p{
+            margin : 5px 0;
+        }
+        .description {
+            font-size: 15px;
+            color: #d3e0ff;
+        }
+        .teacher{
+            font-weight: 500;
+            color: #ffebd6;
+        }
+        .per_hour{
+            color: #8d94a7;
+        }
+    }
+    .course-price{
+        width: 17%;
+        text-align: right;
+    }
     .course{
-        border: 1px solid red;
+        background: #454a56;
+        margin: 15px 0;
+        padding: 15px 20px;
+        border-radius: 8px;
     }
     .course-cart{
         background-color: #4a4a4b;
+    }
+
+    .course-cart{
+        background: #494e5d;
+        border-radius: 8px;
+        margin: 15px 0;
+        border-top: solid 9px #5e6c8c;
+        padding: 10px 25px;
+        top: 132px;
+        bottom: 0; 
+        .order{
+            font-size: 22px;
+            color: white;
+            border-bottom: 1px solid #9ba2af;
+        }
+        .order_added{
+                display: flex;
+                background: #82899a;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px 10px;
+                border-radius: 8px;
+                margin: 10px 17px;
+            img{
+                width: 30%;
+                border-radius: 8px;
+            }
+            p{
+                margin: 0;
+                padding: 5px 10px;
+                font-size: 16px;
+                font-weight: 500;
+            }
+            .price{
+                font-size: 17px;
+                font-weight: 500;
+                color: #a3eeff;
+            }
+        }
+        .all_charge {
+            p{
+                display: flex;
+                justify-content: space-between;
+                font-size: 17px;
+                padding: 0 20px;
+            }
+            .total_amount{
+                font-size: 20px;
+                font-weight: 500;
+                color: #a3eeff;
+                border-top: 2px dotted #949fb9;
+                border-width: 1px;
+                margin-top: 35px;
+            }
+            
+        }
+    }
+}
+
+@media only  screen and (max-width: 750px){
+    .App .course{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .reverse {
+        flex-direction: column-reverse;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .course-cart {
+        background: #494e5d;
+        border-radius: 8px;
+        margin: 15px 0;
+        border-top: solid 9px #5e6c8c;
+        padding: 10px 25px;
+        top: 132px;
+        bottom: 0;
+        position: fixed;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        width: 31%;
+        height: 50%;
     }
 }
